@@ -13,46 +13,41 @@ struct PassesListView: View {
     @State private var showingAddPassView = false
     
     var body: some View {
-            NavigationView {
-                Group {
-                    if passes.isEmpty {
-                        // Display a message when there are no passes
-                        Text("No passes yet.")
-                            .foregroundColor(.gray)
-                            .opacity(0.5)
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    } else {
-                        // List of passes
-                        List {
+        NavigationView {
+            Group {
+                if passes.isEmpty {
+                    Text("No passes yet.")
+                        .foregroundColor(.gray)
+                        .opacity(0.5)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                } else {
+                    ScrollView {
+                        LazyVStack(spacing: 30) { // Adjust spacing as needed
                             ForEach(passes, id: \.id) { pass in
                                 PassRow(pass: pass)
-                                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 0))
                             }
-                            .onDelete(perform: deletePasses)
                         }
-                        .backgroundStyle(.clear)
                     }
                 }
-                .navigationBarTitle("My Passes")
-                .navigationBarItems(trailing: Button(action: {
-                    showingAddPassView = true
-                }) {
-                    Image(systemName: "plus")
-                })
             }
-            .sheet(isPresented: $showingAddPassView) {
-                AddPassView(onSave: { _ in
-                    loadPasses()
-                })
-            }
-            .onAppear {
-                loadPasses()
-            }
+            .navigationBarTitle("My Passes")
+            .navigationBarItems(trailing: Button(action: {
+                showingAddPassView = true
+            }) {
+                Image(systemName: "plus")
+            })
+            .background(Color.clear) // Remove the background color
         }
+        .sheet(isPresented: $showingAddPassView) {
+            AddPassView(onSave: { _ in loadPasses() })
+        }
+        .onAppear { loadPasses() }
+    }
     
     
     struct PassRow: View {
         let pass: HomePass
+        let PassHeight: CGFloat = 250
 
         var body: some View {
             ZStack(alignment: .bottomLeading) {
@@ -61,7 +56,7 @@ struct PassesListView: View {
                     Image(uiImage: image)
                         .resizable()
                         .scaledToFill()
-                        .frame(height: 200) // Adjust height as needed
+                        .frame(height: PassHeight) // Adjust height as needed
                         .cornerRadius(15)
                         .clipped()
                 }
@@ -73,7 +68,7 @@ struct PassesListView: View {
                 // Text
                 VStack(alignment: .leading) {
                     Text(pass.name)
-                        .font(.headline)
+                        .font(.system(size: 24).bold())
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity, alignment: .trailing)
 //                    Text(pass.details)
@@ -82,7 +77,7 @@ struct PassesListView: View {
                 }
                 .padding()
             }
-            .frame(height: 200) // Ensuring the ZStack has a fixed height
+            .frame(height: PassHeight) // Ensuring the ZStack has a fixed height
             .shadow(radius: 5)
             .padding(.horizontal)
         }

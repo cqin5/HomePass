@@ -38,3 +38,20 @@ func loadPasses() -> [HomePass] {
     }
     return []
 }
+
+
+
+import PassKit
+
+func addPassToWallet(passData: Data) {
+    if let pass = try? PKPass(data: passData), let passLibrary = PKPassLibrary() {
+        if passLibrary.containsPass(pass) {
+            // The pass is already in the Wallet.
+        } else {
+            let passViewController = PKAddPassesViewController(pass: pass)
+            // Present passViewController to the user
+        }
+    } else {
+        // Handle error
+    }
+}

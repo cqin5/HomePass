@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A639012D2B0CEA410058A6F6 /* Pass Structure.json in Resources */ = {isa = PBXBuildFile; fileRef = A639012C2B0CEA410058A6F6 /* Pass Structure.json */; };
 		A6F0CA082B0C85AB00B182B1 /* HomePassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA072B0C85AB00B182B1 /* HomePassApp.swift */; };
 		A6F0CA0C2B0C85AD00B182B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F0CA0B2B0C85AD00B182B1 /* Assets.xcassets */; };
 		A6F0CA0F2B0C85AD00B182B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F0CA0E2B0C85AD00B182B1 /* Preview Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A639012C2B0CEA410058A6F6 /* Pass Structure.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Pass Structure.json"; sourceTree = "<group>"; };
 		A6F0CA042B0C85AB00B182B1 /* HomePass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomePass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F0CA072B0C85AB00B182B1 /* HomePassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePassApp.swift; sourceTree = "<group>"; };
 		A6F0CA0B2B0C85AD00B182B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +79,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A639012E2B0CEC0E0058A6F6 /* 1002.pass */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 1002.pass;
+			sourceTree = "<group>";
+		};
 		A6F0C9FB2B0C85AB00B182B1 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +117,8 @@
 				A6F0CA152B0C85AD00B182B1 /* HomePass.entitlements */,
 				A6F0CA162B0C85AD00B182B1 /* Info.plist */,
 				A6F0CA0D2B0C85AD00B182B1 /* Preview Content */,
+				A639012C2B0CEA410058A6F6 /* Pass Structure.json */,
+				A639012E2B0CEC0E0058A6F6 /* 1002.pass */,
 			);
 			path = HomePass;
 			sourceTree = "<group>";
@@ -242,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6F0CA0F2B0C85AD00B182B1 /* Preview Assets.xcassets in Resources */,
+				A639012D2B0CEA410058A6F6 /* Pass Structure.json in Resources */,
 				A6F0CA0C2B0C85AD00B182B1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +463,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.qinchuhan.HomePass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -482,6 +497,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.qinchuhan.HomePass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
