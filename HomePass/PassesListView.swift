@@ -20,7 +20,8 @@ struct PassesListView: View {
             List {
                 ForEach(passes) { pass in
                     HStack {
-                        if let image = pass.image {
+                        // Assuming you have a computed property to convert imageData to UIImage
+                        if let image = UIImage(data: pass.imageData ?? Data()) {
                             Image(uiImage: image)
                                 .resizable()
                                 .frame(width: 50, height: 50)
@@ -54,3 +55,4 @@ struct PassesListView: View {
         }
     }
 }
+

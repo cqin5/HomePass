@@ -8,7 +8,7 @@
 import CoreData
 import UIKit
 
-@objc(Pass)
+@objc(HomePass)
 public class HomePass: NSManagedObject, Identifiable {
     @NSManaged public var id: UUID // Unique identifier for each pass
     @NSManaged public var name: String // Name of the pass

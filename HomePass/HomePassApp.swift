@@ -13,7 +13,7 @@ struct HomePassApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PassesListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
