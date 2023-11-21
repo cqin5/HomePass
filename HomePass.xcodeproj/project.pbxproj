@@ -16,6 +16,9 @@
 		A6F0CA202B0C85AD00B182B1 /* HomePassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA1F2B0C85AD00B182B1 /* HomePassTests.swift */; };
 		A6F0CA2A2B0C85AD00B182B1 /* HomePassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA292B0C85AD00B182B1 /* HomePassUITests.swift */; };
 		A6F0CA2C2B0C85AD00B182B1 /* HomePassUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA2B2B0C85AD00B182B1 /* HomePassUITestsLaunchTests.swift */; };
+		A6F0CA392B0C870800B182B1 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA382B0C870800B182B1 /* Models.swift */; };
+		A6F0CA3B2B0C887200B182B1 /* PassesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA3A2B0C887200B182B1 /* PassesListView.swift */; };
+		A6F0CA3D2B0C88B800B182B1 /* AddPassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA3C2B0C88B800B182B1 /* AddPassView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		A6F0CA252B0C85AD00B182B1 /* HomePassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomePassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F0CA292B0C85AD00B182B1 /* HomePassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePassUITests.swift; sourceTree = "<group>"; };
 		A6F0CA2B2B0C85AD00B182B1 /* HomePassUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePassUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A6F0CA382B0C870800B182B1 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A6F0CA3A2B0C887200B182B1 /* PassesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassesListView.swift; sourceTree = "<group>"; };
+		A6F0CA3C2B0C88B800B182B1 /* AddPassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPassView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +108,15 @@
 			children = (
 				A6F0CA072B0C85AB00B182B1 /* HomePassApp.swift */,
 				A6F0CA092B0C85AB00B182B1 /* ContentView.swift */,
+				A6F0CA3A2B0C887200B182B1 /* PassesListView.swift */,
+				A6F0CA3C2B0C88B800B182B1 /* AddPassView.swift */,
 				A6F0CA0B2B0C85AD00B182B1 /* Assets.xcassets */,
 				A6F0CA102B0C85AD00B182B1 /* Persistence.swift */,
 				A6F0CA152B0C85AD00B182B1 /* HomePass.entitlements */,
 				A6F0CA162B0C85AD00B182B1 /* Info.plist */,
 				A6F0CA122B0C85AD00B182B1 /* HomePass.xcdatamodeld */,
 				A6F0CA0D2B0C85AD00B182B1 /* Preview Content */,
+				A6F0CA382B0C870800B182B1 /* Models.swift */,
 			);
 			path = HomePass;
 			sourceTree = "<group>";
@@ -267,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F0CA392B0C870800B182B1 /* Models.swift in Sources */,
 				A6F0CA112B0C85AD00B182B1 /* Persistence.swift in Sources */,
+				A6F0CA3D2B0C88B800B182B1 /* AddPassView.swift in Sources */,
 				A6F0CA142B0C85AD00B182B1 /* HomePass.xcdatamodeld in Sources */,
+				A6F0CA3B2B0C887200B182B1 /* PassesListView.swift in Sources */,
 				A6F0CA0A2B0C85AB00B182B1 /* ContentView.swift in Sources */,
 				A6F0CA082B0C85AB00B182B1 /* HomePassApp.swift in Sources */,
 			);
@@ -439,11 +451,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HomePass/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,11 +482,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HomePass/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
