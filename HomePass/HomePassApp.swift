@@ -9,12 +9,9 @@ import SwiftUI
 
 @main
 struct HomePassApp: App {
-    let persistenceController = PersistenceController.shared
-
     var body: some Scene {
         WindowGroup {
             PassesListView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

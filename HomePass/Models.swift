@@ -8,30 +8,33 @@
 import CoreData
 import UIKit
 
-@objc(HomePass)
-public class HomePass: NSManagedObject, Identifiable {
-    @NSManaged public var id: UUID // Unique identifier for each pass
-    @NSManaged public var name: String // Name of the pass
-    @NSManaged public var details: String? // Additional details
-    @NSManaged public var imageData: Data? // Image data (optional)
-
-    // Computed property to convert imageData to UIImage
-    public var image: UIImage? {
-        get {
-            guard let imageData = imageData else { return nil }
-            return UIImage(data: imageData)
-        }
-        set {
-            imageData = newValue?.jpegData(compressionQuality: 1.0)
-        }
-    }
-
-    // Convenience initializer
-    convenience init(context: NSManagedObjectContext, name: String, details: String?, image: UIImage?) {
-        self.init(context: context)
+struct HomePass: Codable, Identifiable {
+    let id: UUID
+    var name: String
+    var details: String
+    var imageData: Data?
+    
+    init(name: String, details: String, image: UIImage?) {
         self.id = UUID()
         self.name = name
         self.details = details
-        self.image = image
+        self.imageData = image?.jpegData(compressionQuality: 1.0) // Convert UIImage to Data
     }
+}
+
+func savePasses(_ passes: [HomePass]) {
+    let encoder = JSONEncoder()
+    if let encoded = try? encoder.encode(passes) {
+        UserDefaults.standard.set(encoded, forKey: "HomePasses")
+    }
+}
+
+func loadPasses() -> [HomePass] {
+    let decoder = JSONDecoder()
+    if let savedData = UserDefaults.standard.object(forKey: "HomePasses") as? Data {
+        if let loadedPasses = try? decoder.decode([HomePass].self, from: savedData) {
+            return loadedPasses
+        }
+    }
+    return []
 }

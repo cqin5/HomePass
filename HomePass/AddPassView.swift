@@ -28,8 +28,8 @@ struct AddPassView: View {
     }
 
     private func savePass() {
-        let newPass = HomePass(context: viewContext, name: name, details: details, image: image)
-        PersistenceController.shared.saveContext()
+        let newPass = HomePass(name: name, details: details, image: image)
+        
         // Handle navigation back to the list
     }
 }

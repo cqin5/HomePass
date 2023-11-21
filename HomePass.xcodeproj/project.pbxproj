@@ -10,8 +10,6 @@
 		A6F0CA082B0C85AB00B182B1 /* HomePassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA072B0C85AB00B182B1 /* HomePassApp.swift */; };
 		A6F0CA0C2B0C85AD00B182B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F0CA0B2B0C85AD00B182B1 /* Assets.xcassets */; };
 		A6F0CA0F2B0C85AD00B182B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F0CA0E2B0C85AD00B182B1 /* Preview Assets.xcassets */; };
-		A6F0CA112B0C85AD00B182B1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA102B0C85AD00B182B1 /* Persistence.swift */; };
-		A6F0CA142B0C85AD00B182B1 /* HomePass.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA122B0C85AD00B182B1 /* HomePass.xcdatamodeld */; };
 		A6F0CA202B0C85AD00B182B1 /* HomePassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA1F2B0C85AD00B182B1 /* HomePassTests.swift */; };
 		A6F0CA2A2B0C85AD00B182B1 /* HomePassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA292B0C85AD00B182B1 /* HomePassUITests.swift */; };
 		A6F0CA2C2B0C85AD00B182B1 /* HomePassUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA2B2B0C85AD00B182B1 /* HomePassUITestsLaunchTests.swift */; };
@@ -42,8 +40,6 @@
 		A6F0CA072B0C85AB00B182B1 /* HomePassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePassApp.swift; sourceTree = "<group>"; };
 		A6F0CA0B2B0C85AD00B182B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6F0CA0E2B0C85AD00B182B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A6F0CA102B0C85AD00B182B1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		A6F0CA132B0C85AD00B182B1 /* HomePass.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomePass.xcdatamodel; sourceTree = "<group>"; };
 		A6F0CA152B0C85AD00B182B1 /* HomePass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomePass.entitlements; sourceTree = "<group>"; };
 		A6F0CA162B0C85AD00B182B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6F0CA1B2B0C85AD00B182B1 /* HomePassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomePassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,11 +104,9 @@
 				A6F0CA3A2B0C887200B182B1 /* PassesListView.swift */,
 				A6F0CA3C2B0C88B800B182B1 /* AddPassView.swift */,
 				A6F0CA0B2B0C85AD00B182B1 /* Assets.xcassets */,
-				A6F0CA102B0C85AD00B182B1 /* Persistence.swift */,
 				A6F0CA382B0C870800B182B1 /* Models.swift */,
 				A6F0CA152B0C85AD00B182B1 /* HomePass.entitlements */,
 				A6F0CA162B0C85AD00B182B1 /* Info.plist */,
-				A6F0CA122B0C85AD00B182B1 /* HomePass.xcdatamodeld */,
 				A6F0CA0D2B0C85AD00B182B1 /* Preview Content */,
 			);
 			path = HomePass;
@@ -274,9 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6F0CA392B0C870800B182B1 /* Models.swift in Sources */,
-				A6F0CA112B0C85AD00B182B1 /* Persistence.swift in Sources */,
 				A6F0CA3D2B0C88B800B182B1 /* AddPassView.swift in Sources */,
-				A6F0CA142B0C85AD00B182B1 /* HomePass.xcdatamodeld in Sources */,
 				A6F0CA3B2B0C887200B182B1 /* PassesListView.swift in Sources */,
 				A6F0CA082B0C85AB00B182B1 /* HomePassApp.swift in Sources */,
 			);
@@ -612,19 +604,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		A6F0CA122B0C85AD00B182B1 /* HomePass.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				A6F0CA132B0C85AD00B182B1 /* HomePass.xcdatamodel */,
-			);
-			currentVersion = A6F0CA132B0C85AD00B182B1 /* HomePass.xcdatamodel */;
-			path = HomePass.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = A6F0C9FC2B0C85AB00B182B1 /* Project object */;
 }
