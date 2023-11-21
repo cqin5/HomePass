@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6F0CA082B0C85AB00B182B1 /* HomePassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA072B0C85AB00B182B1 /* HomePassApp.swift */; };
+		A6F0CA0A2B0C85AB00B182B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA092B0C85AB00B182B1 /* ContentView.swift */; };
+		A6F0CA0C2B0C85AD00B182B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F0CA0B2B0C85AD00B182B1 /* Assets.xcassets */; };
+		A6F0CA0F2B0C85AD00B182B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F0CA0E2B0C85AD00B182B1 /* Preview Assets.xcassets */; };
+		A6F0CA112B0C85AD00B182B1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA102B0C85AD00B182B1 /* Persistence.swift */; };
+		A6F0CA142B0C85AD00B182B1 /* HomePass.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA122B0C85AD00B182B1 /* HomePass.xcdatamodeld */; };
+		A6F0CA202B0C85AD00B182B1 /* HomePassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA1F2B0C85AD00B182B1 /* HomePassTests.swift */; };
+		A6F0CA2A2B0C85AD00B182B1 /* HomePassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA292B0C85AD00B182B1 /* HomePassUITests.swift */; };
+		A6F0CA2C2B0C85AD00B182B1 /* HomePassUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0CA2B2B0C85AD00B182B1 /* HomePassUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6F0CA1C2B0C85AD00B182B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6F0C9FC2B0C85AB00B182B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6F0CA032B0C85AB00B182B1;
+			remoteInfo = HomePass;
+		};
+		A6F0CA262B0C85AD00B182B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6F0C9FC2B0C85AB00B182B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6F0CA032B0C85AB00B182B1;
+			remoteInfo = HomePass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A6F0CA042B0C85AB00B182B1 /* HomePass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomePass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6F0CA072B0C85AB00B182B1 /* HomePassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePassApp.swift; sourceTree = "<group>"; };
+		A6F0CA092B0C85AB00B182B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A6F0CA0B2B0C85AD00B182B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6F0CA0E2B0C85AD00B182B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A6F0CA102B0C85AD00B182B1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		A6F0CA132B0C85AD00B182B1 /* HomePass.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomePass.xcdatamodel; sourceTree = "<group>"; };
+		A6F0CA152B0C85AD00B182B1 /* HomePass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomePass.entitlements; sourceTree = "<group>"; };
+		A6F0CA162B0C85AD00B182B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6F0CA1B2B0C85AD00B182B1 /* HomePassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomePassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6F0CA1F2B0C85AD00B182B1 /* HomePassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePassTests.swift; sourceTree = "<group>"; };
+		A6F0CA252B0C85AD00B182B1 /* HomePassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomePassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6F0CA292B0C85AD00B182B1 /* HomePassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePassUITests.swift; sourceTree = "<group>"; };
+		A6F0CA2B2B0C85AD00B182B1 /* HomePassUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePassUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6F0CA012B0C85AB00B182B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F0CA182B0C85AD00B182B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F0CA222B0C85AD00B182B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6F0C9FB2B0C85AB00B182B1 = {
+			isa = PBXGroup;
+			children = (
+				A6F0CA062B0C85AB00B182B1 /* HomePass */,
+				A6F0CA1E2B0C85AD00B182B1 /* HomePassTests */,
+				A6F0CA282B0C85AD00B182B1 /* HomePassUITests */,
+				A6F0CA052B0C85AB00B182B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6F0CA052B0C85AB00B182B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6F0CA042B0C85AB00B182B1 /* HomePass.app */,
+				A6F0CA1B2B0C85AD00B182B1 /* HomePassTests.xctest */,
+				A6F0CA252B0C85AD00B182B1 /* HomePassUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6F0CA062B0C85AB00B182B1 /* HomePass */ = {
+			isa = PBXGroup;
+			children = (
+				A6F0CA072B0C85AB00B182B1 /* HomePassApp.swift */,
+				A6F0CA092B0C85AB00B182B1 /* ContentView.swift */,
+				A6F0CA0B2B0C85AD00B182B1 /* Assets.xcassets */,
+				A6F0CA102B0C85AD00B182B1 /* Persistence.swift */,
+				A6F0CA152B0C85AD00B182B1 /* HomePass.entitlements */,
+				A6F0CA162B0C85AD00B182B1 /* Info.plist */,
+				A6F0CA122B0C85AD00B182B1 /* HomePass.xcdatamodeld */,
+				A6F0CA0D2B0C85AD00B182B1 /* Preview Content */,
+			);
+			path = HomePass;
+			sourceTree = "<group>";
+		};
+		A6F0CA0D2B0C85AD00B182B1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A6F0CA0E2B0C85AD00B182B1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A6F0CA1E2B0C85AD00B182B1 /* HomePassTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6F0CA1F2B0C85AD00B182B1 /* HomePassTests.swift */,
+			);
+			path = HomePassTests;
+			sourceTree = "<group>";
+		};
+		A6F0CA282B0C85AD00B182B1 /* HomePassUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6F0CA292B0C85AD00B182B1 /* HomePassUITests.swift */,
+				A6F0CA2B2B0C85AD00B182B1 /* HomePassUITestsLaunchTests.swift */,
+			);
+			path = HomePassUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6F0CA032B0C85AB00B182B1 /* HomePass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6F0CA2F2B0C85AD00B182B1 /* Build configuration list for PBXNativeTarget "HomePass" */;
+			buildPhases = (
+				A6F0CA002B0C85AB00B182B1 /* Sources */,
+				A6F0CA012B0C85AB00B182B1 /* Frameworks */,
+				A6F0CA022B0C85AB00B182B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomePass;
+			productName = HomePass;
+			productReference = A6F0CA042B0C85AB00B182B1 /* HomePass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6F0CA1A2B0C85AD00B182B1 /* HomePassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6F0CA322B0C85AD00B182B1 /* Build configuration list for PBXNativeTarget "HomePassTests" */;
+			buildPhases = (
+				A6F0CA172B0C85AD00B182B1 /* Sources */,
+				A6F0CA182B0C85AD00B182B1 /* Frameworks */,
+				A6F0CA192B0C85AD00B182B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6F0CA1D2B0C85AD00B182B1 /* PBXTargetDependency */,
+			);
+			name = HomePassTests;
+			productName = HomePassTests;
+			productReference = A6F0CA1B2B0C85AD00B182B1 /* HomePassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6F0CA242B0C85AD00B182B1 /* HomePassUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6F0CA352B0C85AD00B182B1 /* Build configuration list for PBXNativeTarget "HomePassUITests" */;
+			buildPhases = (
+				A6F0CA212B0C85AD00B182B1 /* Sources */,
+				A6F0CA222B0C85AD00B182B1 /* Frameworks */,
+				A6F0CA232B0C85AD00B182B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6F0CA272B0C85AD00B182B1 /* PBXTargetDependency */,
+			);
+			name = HomePassUITests;
+			productName = HomePassUITests;
+			productReference = A6F0CA252B0C85AD00B182B1 /* HomePassUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6F0C9FC2B0C85AB00B182B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A6F0CA032B0C85AB00B182B1 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					A6F0CA1A2B0C85AD00B182B1 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = A6F0CA032B0C85AB00B182B1;
+					};
+					A6F0CA242B0C85AD00B182B1 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = A6F0CA032B0C85AB00B182B1;
+					};
+				};
+			};
+			buildConfigurationList = A6F0C9FF2B0C85AB00B182B1 /* Build configuration list for PBXProject "HomePass" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6F0C9FB2B0C85AB00B182B1;
+			productRefGroup = A6F0CA052B0C85AB00B182B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6F0CA032B0C85AB00B182B1 /* HomePass */,
+				A6F0CA1A2B0C85AD00B182B1 /* HomePassTests */,
+				A6F0CA242B0C85AD00B182B1 /* HomePassUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6F0CA022B0C85AB00B182B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6F0CA0F2B0C85AD00B182B1 /* Preview Assets.xcassets in Resources */,
+				A6F0CA0C2B0C85AD00B182B1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F0CA192B0C85AD00B182B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F0CA232B0C85AD00B182B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6F0CA002B0C85AB00B182B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6F0CA112B0C85AD00B182B1 /* Persistence.swift in Sources */,
+				A6F0CA142B0C85AD00B182B1 /* HomePass.xcdatamodeld in Sources */,
+				A6F0CA0A2B0C85AB00B182B1 /* ContentView.swift in Sources */,
+				A6F0CA082B0C85AB00B182B1 /* HomePassApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F0CA172B0C85AD00B182B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6F0CA202B0C85AD00B182B1 /* HomePassTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F0CA212B0C85AD00B182B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6F0CA2C2B0C85AD00B182B1 /* HomePassUITestsLaunchTests.swift in Sources */,
+				A6F0CA2A2B0C85AD00B182B1 /* HomePassUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6F0CA1D2B0C85AD00B182B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6F0CA032B0C85AB00B182B1 /* HomePass */;
+			targetProxy = A6F0CA1C2B0C85AD00B182B1 /* PBXContainerItemProxy */;
+		};
+		A6F0CA272B0C85AD00B182B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6F0CA032B0C85AB00B182B1 /* HomePass */;
+			targetProxy = A6F0CA262B0C85AD00B182B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A6F0CA2D2B0C85AD00B182B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6F0CA2E2B0C85AD00B182B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6F0CA302B0C85AD00B182B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HomePass/HomePass.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HomePass/Preview Content\"";
+				DEVELOPMENT_TEAM = MJS6LB37T9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HomePass/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qinchuhan.HomePass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6F0CA312B0C85AD00B182B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HomePass/HomePass.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HomePass/Preview Content\"";
+				DEVELOPMENT_TEAM = MJS6LB37T9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HomePass/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qinchuhan.HomePass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6F0CA332B0C85AD00B182B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MJS6LB37T9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qinchuhan.HomePassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HomePass.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HomePass";
+			};
+			name = Debug;
+		};
+		A6F0CA342B0C85AD00B182B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MJS6LB37T9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qinchuhan.HomePassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HomePass.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HomePass";
+			};
+			name = Release;
+		};
+		A6F0CA362B0C85AD00B182B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MJS6LB37T9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qinchuhan.HomePassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HomePass;
+			};
+			name = Debug;
+		};
+		A6F0CA372B0C85AD00B182B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MJS6LB37T9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qinchuhan.HomePassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HomePass;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6F0C9FF2B0C85AB00B182B1 /* Build configuration list for PBXProject "HomePass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6F0CA2D2B0C85AD00B182B1 /* Debug */,
+				A6F0CA2E2B0C85AD00B182B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6F0CA2F2B0C85AD00B182B1 /* Build configuration list for PBXNativeTarget "HomePass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6F0CA302B0C85AD00B182B1 /* Debug */,
+				A6F0CA312B0C85AD00B182B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6F0CA322B0C85AD00B182B1 /* Build configuration list for PBXNativeTarget "HomePassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6F0CA332B0C85AD00B182B1 /* Debug */,
+				A6F0CA342B0C85AD00B182B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6F0CA352B0C85AD00B182B1 /* Build configuration list for PBXNativeTarget "HomePassUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6F0CA362B0C85AD00B182B1 /* Debug */,
+				A6F0CA372B0C85AD00B182B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A6F0CA122B0C85AD00B182B1 /* HomePass.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A6F0CA132B0C85AD00B182B1 /* HomePass.xcdatamodel */,
+			);
+			currentVersion = A6F0CA132B0C85AD00B182B1 /* HomePass.xcdatamodel */;
+			path = HomePass.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A6F0C9FC2B0C85AB00B182B1 /* Project object */;
+}
